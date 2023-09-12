@@ -11,21 +11,23 @@
 <body>
 	<div class="container">
 		<div class="header">
+			<nav>
+				<a href="#" id="panel">
+					<svg xmlns="http://www.w3.org/2000/svg" width="10" style="margin-right: 1rem; margin-top: .2rem;" height="10" viewBox="0 0 18 18" fill="none">
+						<path d="M17 17H1V1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M1 13.5L9 6L12 9L16.5 4.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+					Painel
+				</a>
+	
+				<a href="#" id="fatura">
+					<svg xmlns="http://www.w3.org/2000/svg" width="10" style="margin-right: .2rem; margin-top:0.2rem;" height="10" viewBox="0 0 20 24" fill="none">
+						<path d="M5.125 6.3125H8.375M5.125 12H14.875M5.125 15.25H14.875M5.125 18.5H8.375M3.5 22.5625H16.5C16.931 22.5625 17.3443 22.3913 17.649 22.0865C17.9538 21.7818 18.125 21.3685 18.125 20.9375V3.0625C18.125 2.63152 17.9538 2.2182 17.649 1.91345C17.3443 1.6087 16.931 1.4375 16.5 1.4375H3.5C3.06902 1.4375 2.6557 1.6087 2.35095 1.91345C2.0462 2.2182 1.875 2.63152 1.875 3.0625V20.9375C1.875 21.3685 2.0462 21.7818 2.35095 22.0865C2.6557 22.3913 3.06902 22.5625 3.5 22.5625Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+					Faturas
+				</a>
+			</nav>
 
-			<button id="panel">
-				<svg xmlns="http://www.w3.org/2000/svg" width="15" style="margin-right: 1rem; margin-top: .2rem;" height="15" viewBox="0 0 18 18" fill="none">
-					<path d="M17 17H1V1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-					<path d="M1 13.5L9 6L12 9L16.5 4.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-				</svg>
-				Painel
-			</button>
-
-			<button id="fatura">
-				<svg xmlns="http://www.w3.org/2000/svg" width="15" style="margin-right: .2rem; margin-top:0.2rem;" height="15" viewBox="0 0 20 24" fill="none">
-					<path d="M5.125 6.3125H8.375M5.125 12H14.875M5.125 15.25H14.875M5.125 18.5H8.375M3.5 22.5625H16.5C16.931 22.5625 17.3443 22.3913 17.649 22.0865C17.9538 21.7818 18.125 21.3685 18.125 20.9375V3.0625C18.125 2.63152 17.9538 2.2182 17.649 1.91345C17.3443 1.6087 16.931 1.4375 16.5 1.4375H3.5C3.06902 1.4375 2.6557 1.6087 2.35095 1.91345C2.0462 2.2182 1.875 2.63152 1.875 3.0625V20.9375C1.875 21.3685 2.0462 21.7818 2.35095 22.0865C2.6557 22.3913 3.06902 22.5625 3.5 22.5625Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-				</svg>
-				Faturas
-			</button>
 			
 		</div>
 
@@ -61,14 +63,205 @@
 				<button class="h3_month"><span>Nov</span></button>
 				<button class="h3_month"><span>Dez</span></button>
 			</div>
-			<div class="card_right">
-				<svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
-					<path d="M21.8225 26.8333H23.8283C24.8433 26.8333 25.6771 26.075 25.7979 25.1183L27.7917 5.89166H21.75V1.16666H19.3696V5.89166H13.3642L13.7267 8.62166C15.7929 9.16999 17.7263 10.1617 18.8863 11.2583C20.6263 12.915 21.8225 14.63 21.8225 17.43V26.8333ZM1.20834 25.6667V24.5H19.3696V25.6667C19.3696 26.2967 18.8258 26.8333 18.125 26.8333H2.41668C1.75209 26.8333 1.20834 26.2967 1.20834 25.6667ZM19.3696 17.5C19.3696 8.16666 1.20834 8.16666 1.20834 17.5H19.3696ZM1.20834 19.8333H19.3333V22.1667H1.20834V19.8333Z" fill="#FFDC5F"/>
+			<div class="card_right_all">
+				<div class="card_right">
+					<div class="card_right_up">
+						<svg class="card_buyed" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 29 28" fill="none">
+							<path d="M21.8225 26.8333H23.8283C24.8433 26.8333 25.6771 26.075 25.7979 25.1183L27.7917 5.89166H21.75V1.16666H19.3696V5.89166H13.3642L13.7267 8.62166C15.7929 9.16999 17.7263 10.1617 18.8863 11.2583C20.6263 12.915 21.8225 14.63 21.8225 17.43V26.8333ZM1.20834 25.6667V24.5H19.3696V25.6667C19.3696 26.2967 18.8258 26.8333 18.125 26.8333H2.41668C1.75209 26.8333 1.20834 26.2967 1.20834 25.6667ZM19.3696 17.5C19.3696 8.16666 1.20834 8.16666 1.20834 17.5H19.3696ZM1.20834 19.8333H19.3333V22.1667H1.20834V19.8333Z" fill="#FFDC5F"/>
+						</svg>
+						<span class="card_buyed" style="color: #5E5E5E;">23</span>
+						<span class="card_buyed" style="margin-left: .4rem;">Ifood*Fodaski</span>
+					</div>
+					<div class="card_right_down">
+						<span class="card_buyed" style="color: #E34F4F;">R$22,90</span>
+						<span class="card_buyed" style="color: #5E5E5E; margin-left: 2.2rem;">Comida</span>
+					</div>
+				</div>
+	
+				<svg width="310" style="margin-left: 31.5%;" height="2" viewBox="0 0 310 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<line x1="0.275604" y1="1.12982" x2="150.491" y2="1.12982" stroke="#5E5E5E"/>
 				</svg>
-				<span>23</span>
+					
+	
+				<div class="card_right">
+					<div class="card_right_up">
+						<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 25 22" fill="none">
+							<path d="M12.5 21.9083L10.7479 20.3683C4.52499 14.92 0.416656 11.315 0.416656 6.91667C0.416656 3.31167 3.34082 0.5 7.06249 0.5C9.16499 0.5 11.1829 1.445 12.5 2.92667C13.8171 1.445 15.835 0.5 17.9375 0.5C21.6592 0.5 24.5833 3.31167 24.5833 6.91667C24.5833 11.315 20.475 14.92 14.2521 20.3683L12.5 21.9083Z" fill="#0FA958"/>
+						</svg>
+						<span class="card_buyed" style="color: #5E5E5E;">23</span>
+						<span class="card_buyed" style="margin-left: .4rem;">Saque Santander</span>
+					</div>
+					<div class="card_right_down">
+						<span class="card_buyed" style="color: #BAFF75;">R$350,25</span>
+						<span class="card_buyed" style="color: #5E5E5E; margin-left: 2.2rem;">Salário</span>
+					</div>
+				</div>
+				<svg width="310" style="margin-left: 31.5%;" height="2" viewBox="0 0 310 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<line x1="0.275604" y1="1.12982" x2="150.491" y2="1.12982" stroke="#5E5E5E"/>
+				</svg>
+					
+	
+				<div class="card_right">
+					<div class="card_right_up">
+						<svg class="card_buyed" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 29 28" fill="none">
+							<path d="M21.8225 26.8333H23.8283C24.8433 26.8333 25.6771 26.075 25.7979 25.1183L27.7917 5.89166H21.75V1.16666H19.3696V5.89166H13.3642L13.7267 8.62166C15.7929 9.16999 17.7263 10.1617 18.8863 11.2583C20.6263 12.915 21.8225 14.63 21.8225 17.43V26.8333ZM1.20834 25.6667V24.5H19.3696V25.6667C19.3696 26.2967 18.8258 26.8333 18.125 26.8333H2.41668C1.75209 26.8333 1.20834 26.2967 1.20834 25.6667ZM19.3696 17.5C19.3696 8.16666 1.20834 8.16666 1.20834 17.5H19.3696ZM1.20834 19.8333H19.3333V22.1667H1.20834V19.8333Z" fill="#FFDC5F"/>
+						</svg>
+						<span class="card_buyed" style="color: #5E5E5E;">23</span>
+						<span class="card_buyed" style="margin-left: .4rem;">Ifood*Fodaski</span>
+					</div>
+					<div class="card_right_down">
+						<span class="card_buyed" style="color: #E34F4F;">R$22,90</span>
+						<span class="card_buyed" style="color: #5E5E5E; margin-left: 2.2rem;">Comida</span>
+					</div>
+				</div>
+	
+				<svg width="310" style="margin-left: 31.5%;" height="2" viewBox="0 0 310 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<line x1="0.275604" y1="1.12982" x2="150.491" y2="1.12982" stroke="#5E5E5E"/>
+				</svg>
+					
+	
+				<div class="card_right">
+					<div class="card_right_up">
+						<svg class="card_buyed" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 29 28" fill="none">
+							<path d="M21.8225 26.8333H23.8283C24.8433 26.8333 25.6771 26.075 25.7979 25.1183L27.7917 5.89166H21.75V1.16666H19.3696V5.89166H13.3642L13.7267 8.62166C15.7929 9.16999 17.7263 10.1617 18.8863 11.2583C20.6263 12.915 21.8225 14.63 21.8225 17.43V26.8333ZM1.20834 25.6667V24.5H19.3696V25.6667C19.3696 26.2967 18.8258 26.8333 18.125 26.8333H2.41668C1.75209 26.8333 1.20834 26.2967 1.20834 25.6667ZM19.3696 17.5C19.3696 8.16666 1.20834 8.16666 1.20834 17.5H19.3696ZM1.20834 19.8333H19.3333V22.1667H1.20834V19.8333Z" fill="#FFDC5F"/>
+						</svg>
+						<span class="card_buyed" style="color: #5E5E5E;">23</span>
+						<span class="card_buyed" style="margin-left: .4rem;">Ifood*Fodaski</span>
+					</div>
+					<div class="card_right_down">
+						<span class="card_buyed" style="color: #E34F4F;">R$22,90</span>
+						<span class="card_buyed" style="color: #5E5E5E; margin-left: 2.2rem;">Comida</span>
+					</div>
+				</div>
+				<svg width="310" style="margin-left: 31.5%;" height="2" viewBox="0 0 310 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<line x1="0.275604" y1="1.12982" x2="150.491" y2="1.12982" stroke="#5E5E5E"/>
+				</svg>
+					
+	
+				<div class="card_right">
+					<div class="card_right_up">
+						<svg class="card_buyed" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 29 28" fill="none">
+							<path d="M21.8225 26.8333H23.8283C24.8433 26.8333 25.6771 26.075 25.7979 25.1183L27.7917 5.89166H21.75V1.16666H19.3696V5.89166H13.3642L13.7267 8.62166C15.7929 9.16999 17.7263 10.1617 18.8863 11.2583C20.6263 12.915 21.8225 14.63 21.8225 17.43V26.8333ZM1.20834 25.6667V24.5H19.3696V25.6667C19.3696 26.2967 18.8258 26.8333 18.125 26.8333H2.41668C1.75209 26.8333 1.20834 26.2967 1.20834 25.6667ZM19.3696 17.5C19.3696 8.16666 1.20834 8.16666 1.20834 17.5H19.3696ZM1.20834 19.8333H19.3333V22.1667H1.20834V19.8333Z" fill="#FFDC5F"/>
+						</svg>
+						<span class="card_buyed" style="color: #5E5E5E;">23</span>
+						<span class="card_buyed" style="margin-left: .4rem;">Ifood*Fodaski</span>
+					</div>
+					<div class="card_right_down">
+						<span class="card_buyed" style="color: #E34F4F;">R$22,90</span>
+						<span class="card_buyed" style="color: #5E5E5E; margin-left: 2.2rem;">Comida</span>
+					</div>
+				</div>
+				
+				<svg width="310" style="margin-left: 31.5%;" height="2" viewBox="0 0 310 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<line x1="0.275604" y1="1.12982" x2="150.491" y2="1.12982" stroke="#5E5E5E"/>
+				</svg>
+					
+
 			</div>
+			
+			<svg width="1" style="margin-left: 48%; margin-top:-28% " height="300" viewBox="0 0 1 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<line x1="0.5" x2="0.5" y2="290" stroke="black"/>
+			</svg>
 
 				
+			<div class="card_left_2">
+				<div class="card_left">
+					<div class="card_right_up">
+						<svg class="card_buyed" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 29 28" fill="none">
+							<path d="M21.8225 26.8333H23.8283C24.8433 26.8333 25.6771 26.075 25.7979 25.1183L27.7917 5.89166H21.75V1.16666H19.3696V5.89166H13.3642L13.7267 8.62166C15.7929 9.16999 17.7263 10.1617 18.8863 11.2583C20.6263 12.915 21.8225 14.63 21.8225 17.43V26.8333ZM1.20834 25.6667V24.5H19.3696V25.6667C19.3696 26.2967 18.8258 26.8333 18.125 26.8333H2.41668C1.75209 26.8333 1.20834 26.2967 1.20834 25.6667ZM19.3696 17.5C19.3696 8.16666 1.20834 8.16666 1.20834 17.5H19.3696ZM1.20834 19.8333H19.3333V22.1667H1.20834V19.8333Z" fill="#FFDC5F"/>
+						</svg>
+						<span class="card_buyed" style="color: #5E5E5E;">23</span>
+						<span class="card_buyed" style="margin-left: .4rem;">Ifood*Fodaski</span>
+					</div>
+					<div class="card_right_down">
+						<span class="card_buyed" style="color: #E34F4F;">R$22,90</span>
+						<span class="card_buyed" style="color: #5E5E5E; margin-left: 2.2rem;">Comida</span>
+					</div>
+				</div>
+	
+				<svg width="310" style="margin-left: 51.5%;" height="2" viewBox="0 0 310 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<line x1="0.275604" y1="1.12982" x2="150.491" y2="1.12982" stroke="#5E5E5E"/>
+				</svg>
+	
+				<div class="card_left">
+					<div class="card_right_up">
+						<svg class="card_buyed" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 29 28" fill="none">
+							<path d="M21.8225 26.8333H23.8283C24.8433 26.8333 25.6771 26.075 25.7979 25.1183L27.7917 5.89166H21.75V1.16666H19.3696V5.89166H13.3642L13.7267 8.62166C15.7929 9.16999 17.7263 10.1617 18.8863 11.2583C20.6263 12.915 21.8225 14.63 21.8225 17.43V26.8333ZM1.20834 25.6667V24.5H19.3696V25.6667C19.3696 26.2967 18.8258 26.8333 18.125 26.8333H2.41668C1.75209 26.8333 1.20834 26.2967 1.20834 25.6667ZM19.3696 17.5C19.3696 8.16666 1.20834 8.16666 1.20834 17.5H19.3696ZM1.20834 19.8333H19.3333V22.1667H1.20834V19.8333Z" fill="#FFDC5F"/>
+						</svg>
+						<span class="card_buyed" style="color: #5E5E5E;">23</span>
+						<span class="card_buyed" style="margin-left: .4rem;">Ifood*Fodaski</span>
+					</div>
+					<div class="card_right_down">
+						<span class="card_buyed" style="color: #E34F4F;">R$22,90</span>
+						<span class="card_buyed" style="color: #5E5E5E; margin-left: 2.2rem;">Comida</span>
+					</div>
+				</div>
+				
+				<svg width="310" style="margin-left: 51.5%;" height="2" viewBox="0 0 310 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<line x1="0.275604" y1="1.12982" x2="150.491" y2="1.12982" stroke="#5E5E5E"/>
+				</svg>
+	
+				<div class="card_left">
+					<div class="card_right_up">
+						<svg class="card_buyed" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 29 28" fill="none">
+							<path d="M21.8225 26.8333H23.8283C24.8433 26.8333 25.6771 26.075 25.7979 25.1183L27.7917 5.89166H21.75V1.16666H19.3696V5.89166H13.3642L13.7267 8.62166C15.7929 9.16999 17.7263 10.1617 18.8863 11.2583C20.6263 12.915 21.8225 14.63 21.8225 17.43V26.8333ZM1.20834 25.6667V24.5H19.3696V25.6667C19.3696 26.2967 18.8258 26.8333 18.125 26.8333H2.41668C1.75209 26.8333 1.20834 26.2967 1.20834 25.6667ZM19.3696 17.5C19.3696 8.16666 1.20834 8.16666 1.20834 17.5H19.3696ZM1.20834 19.8333H19.3333V22.1667H1.20834V19.8333Z" fill="#FFDC5F"/>
+						</svg>
+						<span class="card_buyed" style="color: #5E5E5E;">23</span>
+						<span class="card_buyed" style="margin-left: .4rem;">Ifood*Fodaski</span>
+					</div>
+					<div class="card_right_down">
+						<span class="card_buyed" style="color: #E34F4F;">R$22,90</span>
+						<span class="card_buyed" style="color: #5E5E5E; margin-left: 2.2rem;">Comida</span>
+					</div>
+				</div>
+
+				<svg width="310" style="margin-left: 51.5%;" height="2" viewBox="0 0 310 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<line x1="0.275604" y1="1.12982" x2="150.491" y2="1.12982" stroke="#5E5E5E"/>
+				</svg>
+	
+				<div class="card_left">
+					<div class="card_right_up">
+						<svg class="card_buyed" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 29 28" fill="none">
+							<path d="M21.8225 26.8333H23.8283C24.8433 26.8333 25.6771 26.075 25.7979 25.1183L27.7917 5.89166H21.75V1.16666H19.3696V5.89166H13.3642L13.7267 8.62166C15.7929 9.16999 17.7263 10.1617 18.8863 11.2583C20.6263 12.915 21.8225 14.63 21.8225 17.43V26.8333ZM1.20834 25.6667V24.5H19.3696V25.6667C19.3696 26.2967 18.8258 26.8333 18.125 26.8333H2.41668C1.75209 26.8333 1.20834 26.2967 1.20834 25.6667ZM19.3696 17.5C19.3696 8.16666 1.20834 8.16666 1.20834 17.5H19.3696ZM1.20834 19.8333H19.3333V22.1667H1.20834V19.8333Z" fill="#FFDC5F"/>
+						</svg>
+						<span class="card_buyed" style="color: #5E5E5E;">23</span>
+						<span class="card_buyed" style="margin-left: .4rem;">Ifood*Fodaski</span>
+					</div>
+					<div class="card_right_down">
+						<span class="card_buyed" style="color: #E34F4F;">R$22,90</span>
+						<span class="card_buyed" style="color: #5E5E5E; margin-left: 2.2rem;">Comida</span>
+					</div>
+				</div>
+
+				<svg width="310" style="margin-left: 51.5%;" height="2" viewBox="0 0 310 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<line x1="0.275604" y1="1.12982" x2="150.491" y2="1.12982" stroke="#5E5E5E"/>
+				</svg>
+	
+				<div class="card_left">
+					<div class="card_right_up">
+						<svg class="card_buyed" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 29 28" fill="none">
+							<path d="M21.8225 26.8333H23.8283C24.8433 26.8333 25.6771 26.075 25.7979 25.1183L27.7917 5.89166H21.75V1.16666H19.3696V5.89166H13.3642L13.7267 8.62166C15.7929 9.16999 17.7263 10.1617 18.8863 11.2583C20.6263 12.915 21.8225 14.63 21.8225 17.43V26.8333ZM1.20834 25.6667V24.5H19.3696V25.6667C19.3696 26.2967 18.8258 26.8333 18.125 26.8333H2.41668C1.75209 26.8333 1.20834 26.2967 1.20834 25.6667ZM19.3696 17.5C19.3696 8.16666 1.20834 8.16666 1.20834 17.5H19.3696ZM1.20834 19.8333H19.3333V22.1667H1.20834V19.8333Z" fill="#FFDC5F"/>
+						</svg>
+						<span class="card_buyed" style="color: #5E5E5E;">23</span>
+						<span class="card_buyed" style="margin-left: .4rem;">Ifood*Fodaski</span>
+					</div>
+					<div class="card_right_down">
+						<span class="card_buyed" style="color: #E34F4F;">R$22,90</span>
+						<span class="card_buyed" style="color: #5E5E5E; margin-left: 2.2rem;">Comida</span>
+					</div>
+				</div>
+
+				<svg width="310" style="margin-left: 51.5%;" height="2" viewBox="0 0 310 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<line x1="0.275604" y1="1.12982" x2="150.491" y2="1.12982" stroke="#5E5E5E"/>
+				</svg>
+	
+			</div>
+			
+
+			<div class="btn_change_all">
+				<button class="btn_change"><</button>
+				<button class="btn_change">></button>
+			</div>
 		</div>
 		
 	</div>
