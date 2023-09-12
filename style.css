@@ -1,0 +1,92 @@
+
+@font-face {
+	font-family: 'Jomhuria';
+	src: url('https://fonts.googleapis.com/css?family=Jomhuria');
+}
+body {
+	background-color: #0F1521;
+	font-family: 'Jomhuria';
+}
+
+hr {
+	border-style: none;
+	height: 1px;
+	background-color: black;
+}
+
+.header button{
+	background-color: transparent;
+	width: auto;
+	color: white;
+	border: none;
+	width: auto;
+	text-align: center;
+	display: inline-flex;
+	position: relative;
+	margin-left: 40%;
+	font-size: 20px;
+	
+	line-height: normal;
+}
+
+.months {
+	margin-left: 33%;
+	margin-top:1%;
+	display: inline-flex;
+
+
+}
+
+.h3_month span{
+	color: #FFF;
+	font-family: Jomhuria;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+
+
+	
+}
+
+.months button:focus span{
+	color:#00FFF0;
+	opacity: .4;
+}
+
+.h3_month {
+	font-family: Jomhuria;
+
+	height: auto;
+	width: auto;
+	text-align: center;
+	align-items: center;
+	background-color: transparent;
+	border: none;
+	overflow:hidden;
+	margin-left: .2rem;
+}
+
+.header button:focus {
+	outline: none;
+	color: #00FFF0;
+	opacity: 0.4;
+}
+
+.text_info p{
+
+	color: white;
+	display:inline-flex;
+	position: flex;
+	margin-left: 30%;
+	font-size: 50px;
+	line-height: normal;
+	font-weight: 400px;
+	font-style: normal;
+	margin-top: 6rem;
+}
+
+
+#fatura {
+	margin-left: 5%;
+}

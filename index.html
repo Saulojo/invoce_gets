@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Organizador De Contas</title>
+	<link href='https://fonts.googleapis.com/css?family=Jomhuria' rel='stylesheet'>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+
+			<button id="panel">
+				<svg xmlns="http://www.w3.org/2000/svg" width="15" style="margin-right: 1rem; margin-top: .2rem;" height="15" viewBox="0 0 18 18" fill="none">
+					<path d="M17 17H1V1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+					<path d="M1 13.5L9 6L12 9L16.5 4.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+				</svg>
+				Painel
+			</button>
+
+			<button id="fatura">
+				<svg xmlns="http://www.w3.org/2000/svg" width="15" style="margin-right: .2rem; margin-top:0.2rem;" height="15" viewBox="0 0 20 24" fill="none">
+					<path d="M5.125 6.3125H8.375M5.125 12H14.875M5.125 15.25H14.875M5.125 18.5H8.375M3.5 22.5625H16.5C16.931 22.5625 17.3443 22.3913 17.649 22.0865C17.9538 21.7818 18.125 21.3685 18.125 20.9375V3.0625C18.125 2.63152 17.9538 2.2182 17.649 1.91345C17.3443 1.6087 16.931 1.4375 16.5 1.4375H3.5C3.06902 1.4375 2.6557 1.6087 2.35095 1.91345C2.0462 2.2182 1.875 2.63152 1.875 3.0625V20.9375C1.875 21.3685 2.0462 21.7818 2.35095 22.0865C2.6557 22.3913 3.06902 22.5625 3.5 22.5625Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+				</svg>
+				Faturas
+			</button>
+			
+		</div>
+
+		<hr>
+
+		<div class="panel_page" style="display: none;">
+			<div class="text_info">
+				<p>Resumo</p>
+				<p>Dicas</p>
+			</div>
+			<div class="graphic_&_tips">
+				<div class="graphic">
+					<p>Gráfico</p>
+				</div>
+				<div class="tips">
+					<p>Gráfico</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="fatura_page">
+			<div class="months">
+				<button class="h3_month"><span>Jan</span></button>
+				<button class="h3_month"><span>Fev</span></button>
+				<button class="h3_month"><span>Mar</span></button>
+				<button class="h3_month"><span>Abr</span></button>
+				<button class="h3_month"><span>Mai</span></button>
+				<button class="h3_month"><span>Jun</span></button>
+				<button class="h3_month"><span>Jul</span></button>
+				<button class="h3_month"><span>Ago</span></button>
+				<button class="h3_month"><span>Set</span></button>
+				<button class="h3_month"><span>Out</span></button>
+				<button class="h3_month"><span>Nov</span></button>
+				<button class="h3_month"><span>Dez</span></button>
+			</div>
+			<div class="card_right">
+				<svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
+					<path d="M21.8225 26.8333H23.8283C24.8433 26.8333 25.6771 26.075 25.7979 25.1183L27.7917 5.89166H21.75V1.16666H19.3696V5.89166H13.3642L13.7267 8.62166C15.7929 9.16999 17.7263 10.1617 18.8863 11.2583C20.6263 12.915 21.8225 14.63 21.8225 17.43V26.8333ZM1.20834 25.6667V24.5H19.3696V25.6667C19.3696 26.2967 18.8258 26.8333 18.125 26.8333H2.41668C1.75209 26.8333 1.20834 26.2967 1.20834 25.6667ZM19.3696 17.5C19.3696 8.16666 1.20834 8.16666 1.20834 17.5H19.3696ZM1.20834 19.8333H19.3333V22.1667H1.20834V19.8333Z" fill="#FFDC5F"/>
+				</svg>
+				<span>23</span>
+			</div>
+
+				
+		</div>
+		
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
